@@ -1,0 +1,162 @@
+/*
+	Author: lampkraft
+	Author URI: https://github.com/lampkraft
+	Version 1.0
+*/
+
+html, body{
+	background-color: #fc692f;
+	overflow: auto;
+}
+
+.frame-wrapper{
+
+	overflow: hidden;
+	vertical-align: top;
+}
+.frame-wrapper ul:not(.frame-bottom){
+	margin:0;
+    padding:0;
+}
+.frame-top{
+	background-image: url('images/frame-horizontal-back.png');
+	display: block;
+	height: 40px;
+	width: 100%;
+}
+.frame-left{
+	background-image: url('images/frame-vertical-back.png');
+	display: inline-block;
+	height: calc(100% - 80px);
+	width: 40px;
+}
+.frame-content{
+	background-image: url(images/content.png);
+	background-color: white;
+	background-size: auto;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border: 5px solid rgb(203, 67, 43);
+    box-sizing: border-box;
+	display: inline-block;
+	height: calc(100% - 80px);
+	margin: 0 -4px 0 -4px;
+	vertical-align: top;
+	width: calc(100% - 80px);
+}
+.frame-right{
+	background-image: url('images/frame-vertical-back.png');
+	display: inline-block;
+	height: calc(100% - 80px);
+	width: 40px;
+}
+.frame-bottom{
+	background-image: url('images/frame-horizontal-back.png');
+	display: block;
+	height: 40px;
+	margin: -3px 0 0 0;
+	width: 100%;
+}
+/*
+	Horizontal
+*/
+.frame-top li, .frame-bottom li{
+	display: inline-block;
+	height: 100%;
+}
+/*
+	Corners
+*/
+.frame-top li:first-of-type, .frame-bottom li:first-of-type,
+.frame-top li:last-of-type, .frame-bottom li:last-of-type{
+	width: 40px;
+}
+.frame-top li:first-of-type{
+	background-image: url('images/frame-corner-0.png');
+}
+.frame-bottom li:first-of-type{
+	background-image: url('images/frame-corner-1.png');
+}
+.frame-top li:last-of-type{
+	background-image: url('images/frame-corner-3.png');
+	float: right;
+}
+.frame-bottom li:last-of-type{
+	background-image: url('images/frame-corner-2.png');
+	float: right;
+}
+.frame-top li:nth-of-type(2){
+	background-image: url('images/frame-horizontal-0.png');
+	background-position: left center;
+}
+.frame-bottom li:nth-of-type(2){
+	background-image: url('images/frame-horizontal-00.png');
+	background-position: left center;
+}
+.frame-top li:nth-of-type(4){
+	background-image: url('images/frame-horizontal-2.png');
+	background-position: right center;
+}
+.frame-bottom li:nth-of-type(4){
+	background-image: url('images/frame-horizontal-02.png');
+	background-position: right center;
+}
+.frame-top li:nth-of-type(2), .frame-bottom li:nth-of-type(2),
+.frame-top li:nth-of-type(4), .frame-bottom li:nth-of-type(4){
+	background-repeat: no-repeat;
+	width: 150px;
+}
+.frame-top li:nth-of-type(3), .frame-bottom li:nth-of-type(3)/*Middle*/{
+	background-repeat: no-repeat;
+	width: calc(100% - 380px);
+}
+.frame-top li:nth-of-type(3){
+	background-image: url('images/frame-horizontal-1.png');
+	background-position: center center;
+}
+.frame-bottom li:nth-of-type(3){
+	background-image: url('images/frame-horizontal-01.png');
+	background-position: center center;
+}
+.frame-top li:last-of-type, .frame-bottom li:last-of-type,
+.frame-top li:first-of-type, .frame-bottom li:first-of-type{
+	margin: 0px;
+}
+.frame-top li:first-of-type, .frame-bottom li:first-of-type{
+
+}
+/*
+	Vertical
+*/
+.frame-left li, .frame-right li{
+	width: 100%;
+}
+.frame-left li:first-of-type, .frame-right li:first-of-type,
+.frame-left li:last-of-type, .frame-right li:last-of-type{
+	background-repeat: no-repeat;
+	height: 100px;
+}
+.frame-left li:first-of-type{
+	background-image: url('images/frame-vertical-2.png');
+	background-position: center top;
+}
+.frame-left li:nth-of-type(2){
+	background-image: url('images/frame-vertical-1.png');
+	background-position: center center;
+}
+.frame-right li:first-of-type{
+	background-image: url('images/frame-vertical-2.png');
+	background-position: center top;
+}
+.frame-left li:last-of-type{
+	background-image: url('images/frame-vertical-0.png');
+	background-position: center bottom;
+}
+.frame-right li:last-of-type{
+	background-image: url('images/frame-vertical-0.png');
+	background-position: center bottom;
+}
+.frame-left li:nth-of-type(2), .frame-right li:nth-of-type(2)/*Middle*/{
+	background-repeat: no-repeat;
+	height: calc(100% - 200px);
+}
